@@ -1,0 +1,10 @@
+# Directories
+/.idea/
+/node_modules/
+
+# Mac Files
+.DS_Store
+src/.DS_Store
+
+# Extra Files
+#TODO

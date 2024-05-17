@@ -1,0 +1,547 @@
+// Import SCSS files for components
+@import 'header';
+@import 'footer';
+@import 'maincontent';
+@import 'extra';
+
+// Other imports, if needed
+
+/* TODO: CHECK AND IMPLEMENT */
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+footer {
+  unicode-bidi: isolate;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+svg {
+  max-width: 100%;
+}
+
+button {
+  appearance: auto;
+  /*
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-variant-alternates: ;
+  font-variant-position: ;
+  font-weight: ;
+  font-stretch: ;
+  font-size: ;
+  font-family: ;
+  font-optical-sizing: ;
+  font-kerning: ;
+  font-feature-settings: ;
+  font-variation-settings: ;
+  */
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+ol, ul {
+  box-sizing: border-box;
+}
+
+blockquote, hr, ol, p, ul {
+  margin-bottom: 1rem;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.hr, .hr-black, hr {
+  background: #000000;
+}
+
+/*
+
+element.style {
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .headroom, .headroom .site-header__wrapper {
+    transition: transform .2s linear;
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-header {
+    top: 0;
+  }
+}
+
+.site-header {
+  height: var(--site-header--height);
+  position: sticky;
+  top: var(--wp-admin--admin-bar--height, 0);
+  width: 100%;
+  z-index: 9999;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .headroom, .headroom .site-header__wrapper {
+    transition: transform .2s linear;
+    will-change: transform;
+  }
+}
+
+.site-header__wrapper {
+  background: var(--wp--custom--color--brand-primary);
+  color: var(--wp--custom--color--brand-primary-complement);
+  position: relative;
+  z-index: 299;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.site-header__container {
+  align-items: center;
+  display: flex;
+  padding: .625rem;
+}
+
+.site-header__left {
+  justify-content: flex-start;
+  margin-right: .625rem;
+  position: relative;
+}
+
+.site-header__left, .site-header__right {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+}
+
+.menu-toggle {
+  transition: opacity .3s;
+}
+
+.menu-toggle {
+  --menu-toggle-icon-foreground-color: var(--wp--preset--color--white);
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--wp--preset--color--white);
+  border-radius: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  height: 1.875rem;
+  outline: none;
+  overflow: visible;
+  padding: .4375rem;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  appearance: auto;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-variant-alternates: ;
+  font-variant-position: ;
+  font-weight: ;
+  font-stretch: ;
+  font-size: ;
+  font-family: ;
+  font-optical-sizing: ;
+  font-kerning: ;
+  font-feature-settings: ;
+  font-variation-settings: ;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  word-wrap: normal !important;
+  border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.screen-reader-text {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.menu-toggle__icon, .menu-toggle__icon:after, .menu-toggle__icon:before {
+  transition: background-color .2s ease-in-out;
+}
+
+.menu-toggle__icon, .menu-toggle__icon:after, .menu-toggle__icon:before {
+  background-color: var(--menu-toggle-icon-foreground-color);
+  display: block;
+  height: .125rem;
+  width: 1rem;
+}
+
+.menu-toggle {
+  --menu-toggle-icon-foreground-color: var(--wp--preset--color--white);
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--wp--preset--color--white);
+  border-radius: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  height: 1.875rem;
+  outline: none;
+  overflow: visible;
+  padding: .4375rem;
+  text-decoration: none;
+}
+
+.menu-toggle__title {
+  display: none;
+}
+
+.site-header__nav {
+  left: -.8125rem;
+  top: 2.5rem;
+  width: 100vw;
+  will-change: transform, visibility;
+  z-index: 3;
+}
+
+.site-header__nav {
+  position: absolute;
+  transform: translateX(-500%);
+  visibility: hidden;
+}
+
+.site-header__nav-inner {
+  background: var(--wp--preset--color--white);
+  border-radius: 3px;
+  border-top-width: 1px;
+  border: 1px solid var(--wp--preset--color--gray-b);
+  border-top: 0 solid var(--wp--preset--color--gray-b);
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+  color: var(--wp--preset--color--black);
+  max-height: calc(100dvh - 3.125rem - var(--wp-admin--admin-bar--height, 0px));
+  overflow-y: auto;
+  padding-bottom: 1.25rem;
+}
+
+.header-nav {
+  border-bottom: 1px solid var(--wp--preset--color--gray-b);
+  margin: 0 0 1.25rem;
+  overflow-x: hidden;
+  padding: .625rem 0;
+}
+
+ol, ul {
+  box-sizing: border-box;
+}
+
+blockquote, hr, ol, p, ul {
+  margin-bottom: var(--typography--margin-bottom);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.header-nav .menu-item-has-children:has(.sub-menu-toggle) {
+  position: relative;
+}
+
+.header-nav li {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: .9375rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1.13;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+.header-nav .menu-item-has-children:has(.sub-menu-toggle)>a {
+  padding-right: 2.125rem;
+}
+
+.header-nav a {
+  border: 2px solid transparent;
+  color: var(--wp--preset--color--black);
+  display: block;
+  padding: .5625rem 1.25rem .4375rem;
+  position: relative;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header-nav .menu-item-has-children:has(.sub-menu-toggle) .sub-menu-toggle {
+  background-color: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg==);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: .625rem .4375rem;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.0625rem;
+  outline: none;
+  overflow: visible;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  width: 3.375rem;
+}
+
+#membership-login-container {
+  text-align: center;
+}
+
+.site-header__email, .site-header__search-toggle {
+  transition: opacity .2s ease-in-out;
+}
+
+.site-header__search-toggle {
+  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' aria-hidden='true' tabindex='-1'%3E%3Cpath fill='%23FFF' d='m21.568 24-7.348-7.344a9.218 9.218 0 1 1 1.54-1.325L23 22.569 21.569 24zM9.116 2.025a7.087 7.087 0 1 0 7.091 7.087 7.1 7.1 0 0 0-7.091-7.087z' data-name='Search Icon'/%3E%3C/svg%3E);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.site-header__email, .site-header__search-toggle {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  outline: none;
+  overflow: visible;
+  text-decoration: none;
+}
+
+.site-header__email {
+  display: none;
+}
+
+.site-header__logo {
+  align-items: center;
+  display: flex;
+}
+
+@media (min-width: 37.5rem) {
+  .site-header__right {
+    margin-left: 0;
+  }
+}
+
+.site-header__right {
+  justify-content: flex-end;
+  margin-left: .625rem;
+}
+
+.site-header__left, .site-header__right {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+}
+
+.site-header__logo>a {
+  display: block;
+}
+
+@media (min-width: 30rem) {
+  .site-header__logo svg, .site-header__logo > a {
+    height: 2rem;
+  }
+}
+
+.site-header__logo svg, .site-header__logo>a {
+  height: 1.875rem;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header .site-header-cta {
+  display: none;
+}
+
+.site-header .site-header-cta a {
+  display: block;
+  max-height: 2.5rem;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+.button--login, .entry-content .button--login {
+  align-items: center;
+  border: 1px solid var(--wp--preset--color--white);
+  color: var(--wp--preset--color--white);
+  display: flex;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  padding: .25rem .375rem .1875rem;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+.button--login, .entry-content .button--login {
+  height: 1.75rem;
+  visibility: hidden;
+  width: 5.3125rem;
+}
+
+.button, .entry-content .button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 700;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#membership-dropdown-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+*/

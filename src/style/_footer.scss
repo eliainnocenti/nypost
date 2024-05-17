@@ -1,0 +1,231 @@
+/* _footer.scss */
+
+/* TODO: CHECK AND IMPLEMENT */
+
+// global variables
+
+$primary-color: #C60800;
+$primary-color-complementary: #ffffff;
+
+// media queries
+
+@media (min-width: 64rem) {
+  .footer {
+    padding: 1.25rem 1.25rem 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer-wrapper {
+    margin: 0 auto;
+    max-width: 66.5rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer-top {
+    display: flex;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer-logo {
+    margin-right: .625rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .footer-social {
+    margin-right: .625rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer-logo svg {
+    max-width: 14.625rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .footer-social .footer-social-icon-linkedin {
+    display: flex;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer-legal hr {
+    background-color: transparent;
+    margin: 0;
+  }
+}
+
+
+/* Rules for Footer */
+.footer {
+  /* Add specific CSS rules for Footer here */
+  background-color: $primary-color-complementary;
+  border-top: .3125rem solid $primary-color;
+  padding-top: 1.875rem;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for FooterWrapper */
+.footer-wrapper {
+  /* Add specific CSS rules for FooterWrapper here */
+  padding: 0 .625rem 7.5rem;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for FooterTop */
+.footer-top {
+  /* Add specific CSS rules for FooterTop here */
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for FooterLogo */
+.footer-logo {
+  /* Add specific CSS rules for FooterLogo here */
+  text-align: center;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for FooterSocial */
+.footer-social {
+  /* Add specific CSS rules for FooterSocial here */
+}
+
+/* Rules for FooterMain */
+.footer-main {
+  /* Add specific CSS rules for FooterMain here */
+}
+
+/* Rules for FooterLegal */
+.footer-legal {
+  /* Add specific CSS rules for FooterLegal here */
+}
+
+.footer-logo svg {
+  height: 2.125rem;
+  max-width: 13.75rem;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+.footer-social-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+.footer-social-icon {
+  display: flex;
+  visibility: hidden;
+}
+
+.footer-social-list li+li a {
+  margin-left: .625rem;
+}
+
+.footer-social-icon-facebook {
+  background-color: #3b5998;
+}
+
+.footer-social-icon-facebook:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCA1MjIgMTAwMCI+PHBhdGggZD0iTTUyMiAwdjE2NGgtOTRxLTU3IDAtNzAgMjAtMjAgMzAtMjAgNjV2MTE0aDE4NHYxNzlIMzM4djQ1OEgxNTRWNTQySDBWMzYzaDE1NFYyMzRxMC0xMTggNjUtMTc0IDMwLTMwIDcyLTQ1dDkyLTE1aDEzOXoiLz48L3N2Zz4=);
+}
+
+.footer-social-icon-twitter {
+  background-color: #00acee;
+}
+
+.footer-social-icon-twitter:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCAxMjI2IDEwMDAiPjxwYXRoIGQ9Ik0xMjI2IDExOXEtNTggMjktMTQ3IDM5IDgyLTU1IDExMy0xNDEtODggNDgtMTU4IDYyLTM0LTM4LTgyLTU5VDg0NyAwcS02OSAwLTEyNyAzNHQtOTMgOTItMzQgMTI4cTAgMjEgMSAzMSAxIDE1IDUgMjYtMTU1LTktMjkyLTgwUTE3MyAxNjEgNzkgNDVxLTM0IDYyLTM0IDEzMCAwIDYzIDMxIDExOXQ4MiA5MHEtNjMgMC0xMTMtMzR2NnEwIDYxIDI2IDExNHQ3MyA4OCAxMDUgNDZxLTQ2IDEyLTY4IDEyLTE3IDAtMjUtMS0xMy0xLTIwLTUgMjYgNzggODkgMTI2IDY1IDQ5IDE0OCA0OS02NCA1MS0xNDUgODBUNjIgODkzcS0yMSAwLTMxLTEtMTUtMS0zMS01IDE3NSAxMTMgMzg0IDExMyAxNjcgMCAzMDgtNjUgMTI5LTYwIDIyNS0xNjkgOTAtMTAxIDEzOC0yMzEgNDctMTI1IDQ3LTI1M3YtMzNxNzMtNTUgMTI0LTEzMHoiLz48L3N2Zz4=);
+}
+
+.footer-social-icon-instagram {
+  background-color: #125489;
+}
+
+.footer-social-icon-instagram:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGcgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xNS45OTUgMy4wMWMtNC4wMDEgMC00LjY0Mi4wMS02LjQ1OC4wOTMtMS4yNjguMDU4LTIuMTMuMjMxLTIuOTMzLjU0M2E0Ljg0NyA0Ljg0NyAwIDAgMC0xLjc5OCAxLjE3IDQuODQ4IDQuODQ4IDAgMCAwLTEuMTcgMS43OTljLS4zMTIuODAxLS40ODUgMS42NjQtLjU0MyAyLjkzMkMzLjAxIDExLjM2MyAzIDEyLjAwNCAzIDE2LjAwNXMuMDEgNC42NDIuMDkzIDYuNDU4Yy4wNTggMS4yNjguMjMxIDIuMTMuNTQzIDIuOTMzLjI4LjcyMS42MTcgMS4yNDUgMS4xNyAxLjc5OC41NTMuNTUzIDEuMDc3Ljg5IDEuNzk4IDEuMTcuODAyLjMxMiAxLjY2NS40ODUgMi45MzMuNTQzIDEuODE2LjA4MyAyLjQ1Ny4wOTMgNi40NTguMDkzczQuNjQyLS4wMSA2LjQ1OC0uMDkzYzEuMjY4LS4wNTggMi4xMy0uMjMxIDIuOTMzLS41NDNhNC44NDggNC44NDggMCAwIDAgMS43OTgtMS4xNyA0Ljg0OCA0Ljg0OCAwIDAgMCAxLjE3LTEuNzk4Yy4zMTItLjgwMi40ODUtMS42NjUuNTQzLTIuOTMzLjA4My0xLjgxNi4wOTMtMi40NTcuMDkzLTYuNDU4cy0uMDEtNC42NDItLjA5My02LjQ1OGMtLjA1OC0xLjI2OC0uMjMxLTIuMTMtLjU0My0yLjkzM2E0Ljg0OCA0Ljg0OCAwIDAgMC0xLjE3LTEuNzk4IDQuODQ4IDQuODQ4IDAgMCAwLTEuNzk5LTEuMTdjLS44MDEtLjMxMi0xLjY2NC0uNDg1LTIuOTMyLS41NDMtMS44MTYtLjA4My0yLjQ1Ny0uMDkzLTYuNDU4LS4wOTN6bTAtM2M0LjM0NCAwIDQuODg5LjAxOSA2LjU5NS4wOTYgMS43MDIuMDc4IDIuODY1LjM0OCAzLjg4Mi43NDRhNy44NCA3Ljg0IDAgMCAxIDIuODMzIDEuODQ1IDcuODQxIDcuODQxIDAgMCAxIDEuODQ1IDIuODMzYy4zOTYgMS4wMTcuNjY2IDIuMTguNzQ0IDMuODgyLjA3NyAxLjcwNi4wOTYgMi4yNTEuMDk2IDYuNTk1IDAgNC4zNDQtLjAxOSA0Ljg4OS0uMDk2IDYuNTk1LS4wNzggMS43MDItLjM0OCAyLjg2NS0uNzQ0IDMuODgyYTcuODQxIDcuODQxIDAgMCAxLTEuODQ1IDIuODMzIDcuODQxIDcuODQxIDAgMCAxLTIuODMzIDEuODQ1Yy0xLjAxNy4zOTYtMi4xOC42NjYtMy44ODIuNzQ0LTEuNzA2LjA3OC0yLjI1MS4wOTYtNi41OTUuMDk2LTQuMzQ0IDAtNC44ODktLjAxOC02LjU5NS0uMDk2LTEuNzAyLS4wNzgtMi44NjUtLjM0OC0zLjg4Mi0uNzQ0YTcuODQxIDcuODQxIDAgMCAxLTIuODMzLTEuODQ1QTcuODQgNy44NCAwIDAgMSAuODQgMjYuNDgyQy40NDQgMjUuNDY1LjE3NCAyNC4zMDIuMDk2IDIyLjYuMDE4IDIwLjg5NCAwIDIwLjM0OSAwIDE2LjAwNWMwLTQuMzQ0LjAxOC00Ljg4OS4wOTYtNi41OTUuMDc4LTEuNzAyLjM0OC0yLjg2NS43NDQtMy44ODJhNy44NCA3Ljg0IDAgMCAxIDEuODQ1LTIuODMzQTcuODQgNy44NCAwIDAgMSA1LjUxOC44NUM2LjUzNS40NTQgNy42OTguMTg0IDkuNC4xMDYgMTEuMTA2LjAzIDExLjY1MS4wMSAxNS45OTUuMDF6Ii8+PHBhdGggZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTk1IDEwLjc5MWE1LjIxNCA1LjIxNCAwIDEgMCAwIDEwLjQyOCA1LjIxNCA1LjIxNCAwIDAgMCAwLTEwLjQyOHptMC0zYTguMjE0IDguMjE0IDAgMSAxIDAgMTYuNDI4IDguMjE0IDguMjE0IDAgMCAxIDAtMTYuNDI4eiIvPjxwYXRoIGQ9Ik0yNi40NTMgNy40NjdhMS45MiAxLjkyIDAgMSAxLTMuODQgMCAxLjkyIDEuOTIgMCAwIDEgMy44NCAwIi8+PC9nPjwvc3ZnPg==);
+}
+
+.footer-social-icon-linkedin {
+  background-color: #007ab6;
+}
+
+.footer-social-icon-linkedin:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yNjYgMzQ5djU1M0g4MlYzNDloMTg0em0xMi0xNzFxMSA0MS0yOCA2OHQtNzYgMjdoLTFxLTQ2IDAtNzQtMjd0LTI4LTY4cTAtNDEgMjktNjh0NzUtMjcgNzQgMjcgMjkgNjh6bTY1MSA0MDd2MzE3SDc0NVY2MDZxMC01OS0yMy05MnQtNzAtMzNxLTM1IDAtNTkgMTl0LTM1IDQ4cS03IDE3LTcgNDV2MzA5SDM2OHExLTIyMyAxLTM2MXQtMS0xNjV2LTI3aDE4M3Y4MGgtMXExMS0xOCAyMy0zMXQzMi0yOSA0OC0yNCA2NC05cTk2IDAgMTU0IDYzdDU4IDE4NnoiLz48L3N2Zz4=);
+}
+
+.footer-social-icon-email {
+  background-color: $primary-color;
+}
+
+.footer-social-icon-email:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNyAxMyI+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0uNS41djEybDYuMDExLTYuMDExeiIgZGF0YS1uYW1lPSJQYXRoIDQxMiIvPjxwYXRoIGQ9Ik0xMC41MTEgNi41MTEgMTYuNSAxMi41Vi41eiIgZGF0YS1uYW1lPSJQYXRoIDQxMyIvPjxwYXRoIGQ9Ik04LjUzMSA4LjUgNi41MTIgNi40ODkuNSAxMi41aDE2bC01Ljk4OS01Ljk4OXoiIGRhdGEtbmFtZT0iUGF0aCA0MTQiLz48cGF0aCBkPSJtLjUuNSA2LjAxMSA1Ljk4OUw4LjUzMSA4LjVsMS45ODEtMS45ODlMMTYuNS41eiIgZGF0YS1uYW1lPSJQYXRoIDQxNSIvPjwvZz48L3N2Zz4=);
+}
+
+.footer-social-icon-youtube {
+  background-color: red;
+}
+
+.footer-social-icon-youtube:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCAzNSAzNSI+PHBhdGggZD0iTTI3LjcgMTIuM2MtLjItLjktMS0xLjYtMS45LTEuOS0xLjYtLjQtOC4zLS40LTguMy0uNHMtNi43IDAtOC4zLjRjLS45LjItMS42IDEtMS45IDEuOS0uNCAxLjctLjQgNS4yLS40IDUuMnMwIDMuNS40IDUuMmMuMi45IDEgMS42IDEuOSAxLjkgMS43LjQgOC4zLjQgOC4zLjRzNi43IDAgOC4zLS40Yy45LS4yIDEuNi0xIDEuOS0xLjkuNC0xLjcuNC01LjIuNC01LjJzMC0zLjUtLjQtNS4yem0tMTIuNCA4LjR2LTYuM2w1LjYgMy4yLTUuNiAzLjF6Ii8+PC9zdmc+);
+}
+
+.footer-social-icon:before {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+}
+
+.footer-social-icon-email:before, .footer-social-icon-facebook:before, .footer-social-icon-flipboard:before, .footer-social-icon-instagram:before, .footer-social-icon-linkedin:before, .footer-social-icon-post-url:before, .footer-social-icon-twitter:before, .footer-social-icon-whatsapp:before {
+  height: 60%;
+  width: 60%;
+}
+
+.footer-legal {
+  margin-bottom: .375rem;
+  margin-top: .375rem;
+  text-align: center;
+}
+
+.footer-legal a, .footer-legal span {
+  display: inline-block;
+}
+
+.footer-legal a, .footer-legal button, .footer-legal span {
+  color: #585858;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1;
+  padding: 0 .0625rem .0625rem .3125rem;
+}
+
+.footer-legal a {
+  border-left: 1px solid #CCCCCC;
+}
+
+.footer-legal a.ca-privacy {
+  border-left: none;
+  font-weight: 700;
+  padding-right: .0625rem;
+}

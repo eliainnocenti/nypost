@@ -1,0 +1,278 @@
+/* _header.scss */
+
+/* TODO: CHECK AND IMPLEMENT */
+
+// global variables
+
+$header-height: 6.625rem;
+$primary-color: #C60800;
+$primary-color-complementary: #ffffff;
+
+// media queries
+
+/* TODO: check if these rules has to be in another point of the file */
+/* TODO: check if some rules can be grouped if the condition is the same */
+
+@media (min-width: 48rem) {
+  .header-container {
+    height: calc(5.375rem);
+    margin: 0 auto;
+    max-width: 81.25rem;
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .header-left {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .header-right {
+    margin-left: 0;
+  }
+}
+
+@media (min-width:48rem) {
+  .header-logo {
+    height: 3.4375rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .header-menu-toggle {
+    padding: .4375rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .header-menu-toggle-title {
+    color: $primary-color-complementary;
+    display: block;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 1;
+    margin-left: .4375rem;
+    margin-top: .0625rem;
+    padding-bottom: .125rem;
+    text-transform: uppercase;
+    transition: color .2s ease-in-out;
+  }
+}
+
+
+/* Rules for Header */
+.header {
+  /* Add specific CSS rules for Header here */
+
+  height: $header-height;
+  position: sticky;
+  width: 100%;
+  z-index: 9999;
+
+  display: block;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  unicode-bidi: isolate;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for HeaderWrapper */
+.header-wrapper {
+  /* Add specific CSS rules for HeaderWrapper here */
+
+  background: $primary-color;
+  color: $primary-color-complementary;
+  position: relative;
+  z-index: 299;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  display: block;
+  unicode-bidi: isolate;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for HeaderContainer */
+.header-container {
+  /* Add specific CSS rules for HeaderContainer here */
+
+  align-items: center;
+  display: flex;
+  //padding: .625rem;
+
+  border: 0;
+  box-sizing: border-box;
+  //margin: 0;
+  //padding: 0;
+  vertical-align: baseline;
+
+  //display: block;
+  unicode-bidi: isolate;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for HeaderLeft */
+.header-left {
+  /* Add specific CSS rules for HeaderLeft here */
+
+  justify-content: flex-start;
+  //margin-right: .625rem;
+  position: relative;
+
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  //display: block;
+  unicode-bidi: isolate;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for HeaderLogo */
+.header-logo {
+  /* Add specific CSS rules for HeaderLogo here */
+
+  align-items: center;
+  display: flex;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  //display: block;
+  unicode-bidi: isolate;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for HeaderRight */
+.header-right {
+  /* Add specific CSS rules for HeaderRight here */
+
+  justify-content: flex-end;
+  //margin-left: .625rem;
+
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  //display: block;
+  unicode-bidi: isolate;
+
+  // TODO: check if there is more to add
+}
+
+/* Rules for MembershipDropdown */
+.membership-dropdown {
+  /* Add specific CSS rules for MembershipDropdown here */
+}
+
+/* Rules for SiteHeaderBar */
+.site-header-bar {
+  /* Add specific CSS rules for SiteHeaderBar here */
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  word-wrap: normal !important;
+  border: 0;
+  //-webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.header-logo svg {
+  width: auto;
+}
+
+.header-menu-toggle {
+  transition: opacity .3s;
+}
+
+.header-menu-toggle {
+  --menu-toggle-icon-foreground-color: $primary-color-complementary;
+  align-items: center;
+  background-color: transparent;
+  //border: none;
+  border: 1px solid $primary-color-complementary;
+  //border-radius: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  height: 1.875rem;
+  outline: none;
+  overflow: visible;
+  padding: .4375rem;
+  text-decoration: none;
+}
+
+.header-menu-toggle-icon, .header-menu-toggle-icon:after, .header-menu-toggle-icon:before {
+  transition: background-color .2s ease-in-out;
+}
+
+.header-menu-toggle-icon, .header-menu-toggle-icon:after, .header-menu-toggle-icon:before {
+  background-color: $primary-color-complementary;
+  display: block;
+  height: .125rem;
+  width: 1rem;
+}
+
+.header-menu-toggle-icon:before {
+  margin-top: -.375rem;
+}
+
+.header-menu-toggle-icon:after, .header-menu-toggle-icon:before {
+  content: "";
+}
+
+.header-menu-toggle-icon:after {
+  margin-top: 1.75*.375rem; // TODO: check
+}
+
+.header-email, .header-search-toggle {
+  transition: opacity .2s ease-in-out;
+}
+
+.header-search-toggle {
+  //background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' aria-hidden='true' tabindex='-1'%3E%3Cpath fill='%23FFF' d='m21.568 24-7.348-7.344a9.218 9.218 0 1 1 1.54-1.325L23 22.569 21.569 24zM9.116 2.025a7.087 7.087 0 1 0 7.091 7.087 7.1 7.1 0 0 0-7.091-7.087z' data-name='Search Icon'/%3E%3C/svg%3E); // FIXME
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 1.875rem;
+  width: 1.875rem;
+}
